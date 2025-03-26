@@ -15,12 +15,12 @@ const Navbar = () => {
     : "Find Jobs";
 
   return (
-    <div className="pl-10 pr-10 bg-black text-white py-3 flex justify-between items-center">
-      <p className="font-bold text-4xl">CodeJoB!</p>
-      <ul className="flex justify-between items-center gap-6">
+    <div className="bg-black text-white py-3 px-4 sm:px-10 flex flex-wrap justify-between items-center w-full">
+      <p className="font-bold text-2xl sm:text-3xl lg:text-4xl">CodeJoB!</p>
+      <ul className="sm:flex justify-between items-center gap-6">
         <li className="cursor-pointer hover:text-gray-400">{companyName}</li>
       </ul>
-      <div className="flex items-center gap-3">
+      <div className="flex items-center gap-3 mt-2 sm:mt-0">
         <Image
           src="/JohnDoe.jpg"
           alt="Profile"
@@ -28,7 +28,7 @@ const Navbar = () => {
           height={40}
           className="rounded-full"
         />
-        <span className="text-lg font-medium">John Doe</span>
+        <span className="text-sm sm:text-lg font-medium">John Doe</span>
       </div>
     </div>
   );

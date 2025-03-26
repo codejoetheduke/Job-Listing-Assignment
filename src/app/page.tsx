@@ -91,7 +91,7 @@ const Home: React.FC = () => {
             </h1>
             <p className="text-[1.4rem]">Sort By: Newest Post</p>
           </div>
-          <div className="grid grid-cols-3 gap-6 mt-5">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-5">
             {jobsToShow.length > 0 ? (
               jobsToShow.map((job, index) => <JobCard key={index} {...job} />)
             ) : (
@@ -102,23 +102,23 @@ const Home: React.FC = () => {
           </div>
 
           {/* Pagination Controls */}
-          <div className="flex justify-center mt-6">
+          <div className="flex flex-wrap justify-center mt-6 space-x-2 text-sm">
             <button
               className={`mr-4 px-4 py-2 border rounded-lg ${
                 currentPage === 1
                   ? "cursor-not-allowed opacity-50"
                   : "bg-black text-white cursor-pointer"
-              }`}
+              } text-2xl`}
               onClick={() => setCurrentPage((prev) => Math.max(prev - 1, 1))}
               disabled={currentPage === 1}
             >
               Previous
             </button>
-            <span className="px-4 py-2 border bg-gray-200  rounded-lg ">
+            <span className="px-4 py-2 border bg-gray-200  rounded-lg text-2xl">
               Page {currentPage} of {totalPages}
             </span>
             <button
-              className={`ml-4 px-4 py-2 border rounded-lg ${
+              className={`ml-4 px-4 py-2 border rounded-lg text-2xl ${
                 currentPage === totalPages
                   ? "cursor-not-allowed opacity-50 "
                   : "bg-black text-white cursor-pointer"
