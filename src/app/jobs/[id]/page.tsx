@@ -7,14 +7,14 @@ const JobDetail = () => {
   const { id } = useParams(); // Get job ID from URL
 
   // Ensure id is available before filtering
-  if (!id) return <div>Loading...</div>;
+  if (!id) return <div className="text-black">Loading...</div>;
 
   const job = jobs.find((job) => job.id.toString() === id);
 
   if (!job) {
     return (
-      <div className="h-full flex flex-col justify-center items-center bg-amber-600 overflow-hidden">
-        <h1 className="text-2xl font-bold text-white">Job Not Found</h1>
+      <div className="h-full flex flex-col justify-center items-center bg-[#f5f5f5] overflow-hidden">
+        <h1 className="text-2xl font-bold text-black">Job Not Found</h1>
         <Link href="/" className="text-blue-500 mt-4">
           Go Back to Job Listings
         </Link>

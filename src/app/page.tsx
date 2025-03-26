@@ -120,7 +120,7 @@ const Home: React.FC = () => {
             <button
               className={`ml-4 px-4 py-2 border rounded-lg text-2xl ${
                 currentPage === totalPages
-                  ? "cursor-not-allowed  "
+                  ? "cursor-not-allowed"
                   : "bg-black text-white cursor-pointer"
               }`}
               onClick={() =>

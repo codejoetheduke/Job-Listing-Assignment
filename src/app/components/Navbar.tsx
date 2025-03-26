@@ -10,8 +10,7 @@ const Navbar = () => {
 
   // Extract company name dynamically if not on the main page
   const companyName = !isMainPage
-    ? jobs.find((job) => pathname.includes(String(job.id)))?.company ||
-      "Company"
+    ? jobs.find((job) => pathname === "/jobs/" + String(job.id))?.company
     : "Find Jobs";
 
   return (
