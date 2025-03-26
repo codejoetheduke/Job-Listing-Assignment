@@ -106,7 +106,7 @@ const Home: React.FC = () => {
             <button
               className={`mr-4 px-4 py-2 border rounded-lg ${
                 currentPage === 1
-                  ? "cursor-not-allowed opacity-50"
+                  ? "cursor-not-allowed"
                   : "bg-black text-white cursor-pointer"
               } text-2xl`}
               onClick={() => setCurrentPage((prev) => Math.max(prev - 1, 1))}
@@ -120,7 +120,7 @@ const Home: React.FC = () => {
             <button
               className={`ml-4 px-4 py-2 border rounded-lg text-2xl ${
                 currentPage === totalPages
-                  ? "cursor-not-allowed opacity-50 "
+                  ? "cursor-not-allowed  "
                   : "bg-black text-white cursor-pointer"
               }`}
               onClick={() =>

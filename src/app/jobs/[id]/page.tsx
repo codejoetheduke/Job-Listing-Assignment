@@ -23,7 +23,7 @@ const JobDetail = () => {
   }
 
   return (
-    <div className="w-full min-h-screen flex justify-center items-center bg-amber-600">
+    <div className="w-full min-h-screen flex justify-center items-center bg-[#f5f5f5]">
       <div className="bg-white p-10 rounded-lg w-2/3 max-w-2xl h-auto flex flex-col justify-center">
         <h1 className="text-3xl font-bold">{job.title}</h1>
         <div className="mt-5 flex justify-between items-center">

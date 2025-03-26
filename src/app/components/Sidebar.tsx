@@ -49,21 +49,21 @@ const Sidebar: React.FC<SidebarProps> = ({ filters, setFilters }) => {
 
       {/* Sidebar */}
       <div
-        className={`fixed top-0 left-0 min-h-screen w-3/4 bg-white shadow-lg border-r border-gray-300 transition-transform duration-300 md:static md:w-1/4 ${
-          isOpen ? "translate-x-0" : "-translate-x-full"
-        } md:translate-x-0`}
+        className={`fixed top-0 left-0 min-h-screen w-2/3 bg-white shadow-lg border-r border-gray-300 transition-transform duration-300 md:static md:w-1/4 ${
+          isOpen ? "translate-x-0" : "-translate-x-full z-20"
+        } md:translate-x-0 opacity-100`}
       >
         <div className="min-h-screen w-full bg-white flex flex-col justify-between shadow-lg p-6 border-r border-gray-300 lg:min-h-full">
           <h2 className="text-[2rem] font-bold">Filters</h2>
 
           {/* Employment Type Filters */}
-          <div className="flex flex-col gap-3 mt-4">
+          <div className="flex flex-col gap-5">
             <h3 className="text-[1.7rem] font-semibold">Employment Type</h3>
             {["Full-Time", "Part-Time", "Internship", "Contract"].map(
               (type) => (
                 <label
                   key={type}
-                  className="flex items-center gap-2 text-[1.6rem]"
+                  className="flex items-center gap-5 text-[1.6rem] "
                 >
                   <input
                     type="checkbox"
@@ -77,13 +77,13 @@ const Sidebar: React.FC<SidebarProps> = ({ filters, setFilters }) => {
           </div>
 
           {/* Seniority Level Filters */}
-          <div className="flex flex-col gap-3 mt-6">
+          <div className="flex flex-col gap-5">
             <h3 className="text-[1.7rem] font-semibold">Seniority Level</h3>
             {["Entry Level", "Junior Level", "Senior Level", "Executive"].map(
               (level) => (
                 <label
                   key={level}
-                  className="flex items-center gap-2 text-[1.6rem]"
+                  className="flex items-center gap-5 text-[1.6rem]"
                 >
                   <input
                     type="checkbox"
