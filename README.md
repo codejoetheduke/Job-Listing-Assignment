@@ -1,36 +1,66 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# CodeJoB - Job Search Platform
+🚀 CodeJoB is a job search platform that allows users to find job listings based on location, job type, and salary range.
 
-## Getting Started
 
-First, run the development server:
+## 📌 Project Overview
+
+This project was built as part of a submission for [Project Name or Course Name]. The platform provides an interactive job search experience with filtering options, a clean UI, and seamless user navigation.
+
+## 🔗 Live Demo
+👉 CodeJoB Live Demo (Deployed on [Vercel](https://job-listing-assignment.vercel.app/) )
+
+## 🛠 Tech Stack
+Frontend: Next.js, TypeScript, TailwindCSS
+
+Hosting: Vercel
+
+## 🚀 Getting Started
+Prerequisites
+Ensure you have the following installed:
+
+Node.js >= 18.x
+
+npm or pnpm
+
+#### Installation
+Clone the repository
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/your-username/codejob.git
+cd codejob
+Install dependencies
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+```bash
+npm install  # or pnpm install
+Start the development server
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+npm run dev  # or pnpm dev
+Open http://localhost:3000 in your browser
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+🎨 Figma Design
 
-## Learn More
+👉 Figma Design Link
 
-To learn more about Next.js, take a look at the following resources:
+📂 Project Structure
+```bash
+/codejob
+│── /components   # Reusable UI components
+│── /pages        # Next.js page routes
+│── /public       # Static assets
+│── /styles       # Global styles
+│── /utils        # Helper functions & constants
+│── .env.example  # Example environment variables
+│── README.md     # Project documentation
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### 🛠 Contributing
+Feel free to fork this repository and contribute by submitting a pull request.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### 📝 License
+This project is open-source and available under the MIT License.
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+This version keeps it simple and accurate. Let me know if you want any tweaks! 🚀
