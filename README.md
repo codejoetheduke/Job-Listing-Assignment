@@ -43,7 +43,7 @@ Open http://localhost:3000 in your browser
 
 🎨 Figma Design
 
-👉 Figma Design Link
+👉 [Figma Design Link](https://www.figma.com/design/vVMyUNsQTdk8DthhCIZY1E/CodeJoB?node-id=0-1&t=lSdAL1UFHyqihZX6-1)
 
 📂 Project Structure
 ```bash
