@@ -15,7 +15,7 @@ const Navbar = () => {
     : "Find Jobs";
 
   return (
-    <div className="bg-black text-white py-3 px-4 sm:px-10 flex flex-wrap justify-between items-center w-full">
+    <div className="fixed top-0 left-0 w-full bg-black text-white py-3 px-4 sm:px-10 flex flex-wrap justify-between items-center z-50 shadow-lg">
       <p className="font-bold text-2xl sm:text-3xl lg:text-4xl">CodeJoB!</p>
       <ul className="sm:flex justify-between items-center gap-6">
         <li className="cursor-pointer hover:text-gray-400">{companyName}</li>

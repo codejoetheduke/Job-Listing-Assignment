@@ -27,9 +27,9 @@ const SearchBar: React.FC<SearchBarProps> = ({
   };
 
   return (
-    <div className="pt-7 pb-5 px-10 flex flex-col md:flex-row md:justify-between gap-4">
+    <div className="pt-35 pb-5 px-10 flex flex-col md:flex-row md:items-center md:justify-between gap-4 w-full">
       {/* Search Input */}
-      <div className="bg-white border border-gray-300 flex items-center gap-2 p-2 rounded-md w-full md:w-3/7">
+      <div className="bg-white border border-gray-300 flex items-center gap-2 p-2 rounded-md w-full md:w-1/4 min-w-[200px]">
         <Image src="/iconoir_search.svg" alt="" width={20} height={20} />
         <input
           type="text"
@@ -40,10 +40,11 @@ const SearchBar: React.FC<SearchBarProps> = ({
         />
       </div>
 
-      <div className="flex flex-col md:flex-row gap-4 w-full md:w-auto">
+      {/* Dropdowns & Button */}
+      <div className="flex flex-wrap md:flex-nowrap gap-4 w-full md:w-auto justify-center">
         {/* Country Dropdown */}
         <select
-          className="bg-white border border-gray-300 p-2 rounded-md cursor-pointer outline-none w-full md:w-auto"
+          className="bg-white border border-gray-300 p-2 rounded-md cursor-pointer outline-none w-full md:w-auto min-w-[180px]"
           value={country}
           onChange={(e) => {
             setCountry(e.target.value);
@@ -60,7 +61,7 @@ const SearchBar: React.FC<SearchBarProps> = ({
 
         {/* Job Type Dropdown */}
         <select
-          className="bg-white border border-gray-300 p-2 rounded-md cursor-pointer outline-none w-full md:w-auto"
+          className="bg-white border border-gray-300 p-2 rounded-md cursor-pointer outline-none w-full md:w-auto min-w-[180px]"
           value={jobType}
           onChange={(e) => {
             setJobType(e.target.value);
@@ -79,7 +80,7 @@ const SearchBar: React.FC<SearchBarProps> = ({
 
         {/* Salary Range Dropdown */}
         <select
-          className="bg-white border border-gray-300 p-2 rounded-md cursor-pointer outline-none w-full md:w-auto"
+          className="bg-white border border-gray-300 p-2 rounded-md cursor-pointer outline-none w-full md:w-auto min-w-[180px]"
           value={salary}
           onChange={(e) => {
             setSalary(e.target.value);
@@ -93,7 +94,7 @@ const SearchBar: React.FC<SearchBarProps> = ({
         </select>
 
         {/* Search Button */}
-        <button className="bg-black rounded-lg text-white px-4 py-2 uppercase w-full md:w-auto hover:bg-orange-500 cursor-pointer">
+        <button className="bg-black rounded-lg text-white px-4 py-2 uppercase w-full md:w-auto min-w-[180px] hover:bg-orange-500 cursor-pointer">
           Start Searching
         </button>
       </div>

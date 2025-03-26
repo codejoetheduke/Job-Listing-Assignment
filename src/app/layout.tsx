@@ -1,17 +1,7 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+
 import "./globals.css";
 import Navbar from "./components/Navbar";
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
 
 export const metadata: Metadata = {
   title: "CodeJoB",
@@ -25,10 +15,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased flex flex-col justify-center items-center min-h-dvh`}
-      >
-        <div className="bg-[#f5f5f5] min-w-full overflow-hidden">
+      <body className={`antialiased flex flex-col`}>
+        <div className="bg-[#f5f5f5] min-w-full overflow-hidden flex flex-col min-h-dvh">
           <Navbar />
           {children}
         </div>

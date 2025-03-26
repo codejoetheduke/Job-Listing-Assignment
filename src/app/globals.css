@@ -7,7 +7,7 @@ html {
   box-sizing: "border-box";
 }
 body {
-  font-family: "Plus Jakarta Sans", sans-serif;
+  font-family: "Plus Jakarta Sans", "Inter", "Poppins", sans-serif;
   font-style: normal;
   font-size: 1.6rem;
 }
